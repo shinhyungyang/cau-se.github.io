@@ -24,4 +24,4 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.SE_UNI_KIEL_SECRET }}
         run: |
           git remote add fork https://github.com/se-uni-kiel/se-uni-kiel.github.io
-          git push fork main
+          git push -f fork main
