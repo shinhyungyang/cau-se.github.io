@@ -1,0 +1,27 @@
+name: Push to Fork
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  push-to-fork:
+    if: github.repository == 'cau-se/cau-se.github.io'
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout the main repository
+        uses: actions/checkout@v2
+
+      - name: Set up git
+        run: |
+          git config --global user.name "cau se"
+          git config --global user.email "cau.se@uni-kiel.de"
+
+      - name: Push to fork
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git remote add fork https://github.com/se-uni-kiel/se-uni-kiel.github.io.git
+          git push fork main
