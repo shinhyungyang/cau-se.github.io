@@ -4,17 +4,22 @@
 
 @use "sass:color";
 
+// CAU colors
+$cau-grey-color: color.ie-hex-str(#767676);
+$cau-main-color: rgba(155, 10, 125, 1.0);
+$cau-tf-color: rgba(0, 61, 134, 1.0);
+
 :root {
   --global-bg-color: #{$white-color};
   --global-code-bg-color: #{$code-bg-color-light};
   --global-text-color: #{$black-color};
-  --global-text-color-light: #{$grey-color};
-  --global-theme-color: #{$purple-color};
-  --global-hover-color: #{$purple-color};
+  --global-text-color-light: #{$cau-grey-color};
+  --global-theme-color: #{$cau-tf-color};
+  --global-hover-color: #{$cau-tf-color};
   --global-hover-text-color: #{$white-color};
-  --global-footer-bg-color: #{$grey-color-dark};
-  --global-footer-text-color: #{$grey-color-light};
-  --global-footer-link-color: #{$white-color};
+  --global-footer-bg-color: #{$white-color};
+  --global-footer-text-color: #{$black-color};
+  --global-footer-link-color: #{$black-color};
   --global-distill-app-color: #{$grey-color};
   --global-divider-color: rgba(0, 0, 0, 0.1);
   --global-card-bg-color: #{$white-color};
@@ -82,9 +87,9 @@ html[data-theme="dark"] {
   --global-theme-color: #{$cyan-color};
   --global-hover-color: #{$cyan-color};
   --global-hover-text-color: #{$white-color};
-  --global-footer-bg-color: #{$grey-color-light};
-  --global-footer-text-color: #{$grey-color-dark};
-  --global-footer-link-color: #{$black-color};
+  --global-footer-bg-color: #{$grey-color-dark};
+  --global-footer-text-color: #{$grey-color-light};
+  --global-footer-link-color: #{$grey-color-light};
   --global-distill-app-color: #{$grey-color-light};
   --global-divider-color: #424246;
   --global-card-bg-color: #{$grey-900};

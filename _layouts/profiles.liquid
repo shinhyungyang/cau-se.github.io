@@ -3,34 +3,69 @@ layout: page
 ---
 <div class="post">
   <article>
-    {% if page.profiles %}
-      {% for profile in page.profiles %}
-        <hr>
-        <div class="profile float-{% if profile.align == 'left' %}left{% else %}right{% endif %}">
-          {% if profile.image %}
-            {% assign profile_image_path = profile.image | prepend: 'assets/img/' %}
-            {% if profile.image_circular %}
-              {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle' %}
-            {% else %}
-              {% assign profile_image_class = 'img-fluid z-depth-1 rounded' %}
-            {% endif %}
-            {% capture sizes %}(min-width: {{ site.max_width }}) {{ site.max_width | minus: 30 | times: 0.3}}px, (min-width: 576px) 30vw, 95vw"{% endcapture %}
-            {% include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=profile.image %}
-          {% endif %}
-          {% if profile.more_info %}
-            <div class="more-info">{{ profile.more_info }}</div>
-          {% endif %}
-        </div>
+    {% if page.team_img %}
+      {% assign profile_image_path = page.team_img | prepend: 'Team/Team/' %}
+      {% assign profile_image_class = 'img-fluid z-depth-1 rounded' %}
+      {% capture sizes %}(min-width: {{ site.max_width }}) {{ site.max_width | minus: 30 | times: 0.3}}px, (min-width: {{ page.team_img_width }}) 30vw, 95vw"{% endcapture %}
+      {% include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=profile.image %}
+    {% endif %}
+  </article>
+</div>
 
-        <div class="clearfix">
-          {% if profile.content %}
-            {% capture profile_content %}{% include_relative {{ profile.content }} %}{% endcapture %}
-            {{ profile_content | markdownify }}
-          {% else %}
-            {{ content }}
-          {% endif %}
-        </div>
+<div class="clearfix">{{ content }}</div>
+
+<div class="post">
+  <article>
+  <table class="table table-sm table-borderless">
+    <thead>
+      <tr>
+        <th style="width: 25%;">Position</th>
+        <th style="width: 25%;">Name</th>
+        <th>Room</th>
+        <th>Phone</th>
+        <th style="width: 25%;">Photo</th>
+      </tr>
+    </thead>
+      {% for profile in page.profiles %}
+        <tr>
+          <td> {{ profile.Position }} </td>
+          <td> {{ profile.Name }} </td>
+          <td> {{ profile.Room }} </td>
+          <td> {{ profile.Phone }}</td>
+          <td>
+            {% if profile.Photo %}
+              {% assign diacritics =
+              "., ,á,à,â,ä,ã,å,ç,é,è,ê,ë,í,ì,î,ï,ñ,ó,ò,ô,ö,õ,ú,ù,û,ü" | split: ","
+              %}
+              {% assign replacements =
+              "-,-,a,a,a,a,a,a,c,e,e,e,e,i,i,i,i,n,o,o,o,o,o,u,u,u,u" | split: ","
+              %}
+              {% assign folderName = profile.Name %}
+              {% for i in (0..diacritics.size) %}
+                {% assign srcChar = diacritics[i] %}
+                {% assign targChar = replacements[i] %}
+                {% assign folderName = folderName | replace: srcChar, targChar %}
+              {% endfor %}
+
+              {% assign profile_path = folderName | prepend: "Team/" %}
+              {% assign profile_image_path = profile.Photo | prepend: '/' | prepend: profile_path %}
+              {% if profile.image_circular %}
+                {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle' %}
+              {% else %}
+                {% assign profile_image_class = 'img-fluid z-depth-1 rounded' %}
+              {% endif %}
+              {% capture sizes %}(min-width: 100px) 30vw"{% endcapture %}
+              {% include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=profile.image %}
+            {% endif %}
+            {% if profile.more_info %}
+              <div class="more-info">{{ profile.more_info }}</div>
+            {% endif %}
+          </td>
+
+        </tr>
       {% endfor %}
+  </table>
+    {% if page.profiles %}
     {% endif %}
   </article>
 </div>

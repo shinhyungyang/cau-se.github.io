@@ -2,6 +2,30 @@
  * Styles for the base elements of the theme.
  ******************************************************************************/
 
+@font-face {
+  font-family: "CAUIcons";
+  src:
+    url("../webfonts/cauicons-webfont.woff") format('woff');
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "CAUMono";
+  src:
+    url("../webfonts/OxygenMono.woff") format('woff');
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "CAUTitling";
+  src:
+    url("../webfonts/Mittelschrift.woff") format('woff');
+  font-style: normal;
+  font-weight: normal;
+}
+
 // Typography
 
 p,
@@ -19,6 +43,27 @@ strong {
   color: var(--global-text-color);
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "CAUTitling", "FF DIN", "Mittelschrift", "PT Sans", sans-serif;
+}
+
+article {
+  div.clearfix {
+    p {
+      font-size: 1em;
+    }
+  }
+}
+
+div.container.mt-0 {
+  font-size: 0.9em;
+}
+
 hr {
   border-top: 1px solid var(--global-divider-color);
 }
@@ -33,6 +78,25 @@ table {
   th {
     font-weight: bold;
   }
+}
+
+.post {
+  table {
+    table-layout: fixed;
+  }
+  td,
+  th {
+    text-align: right;
+    vertical-align: middle;
+    figure {
+      margin: 0;
+    }
+  } 
+}
+
+table.table-sm td, table.table-sm th {
+  padding-top: .1rem;
+  padding-bottom: .1rem;
 }
 
 a,
@@ -228,7 +292,7 @@ ul.task-list input[type="checkbox"] {
 }
 
 .post-description {
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   font-size: 0.875rem;
 
   a {
