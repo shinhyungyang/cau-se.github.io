@@ -11,12 +11,6 @@ team_img_width: 680px
 profiles:
   # Folder name for each member is defined by the name. All blanks are replaced
   # with dash.
-  - Name: Wilhelm Hasselbring
-    Position: Professor and Head of Group
-    Room: 1217
-    Phone: -4664
-    Photo: PortraitWha.jpg
-
   - Name: Christine Krüger
     Position: Secretary
     Room: 1216
@@ -120,3 +114,5 @@ profiles:
     Photo: Nelson-Tavares-de-Sousa.png
 ---
 Our phone prefix is **+49 431 880**.
+
+Current members:

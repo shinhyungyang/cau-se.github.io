@@ -26,6 +26,44 @@ layout: page
         <th style="width: 25%;">Photo</th>
       </tr>
     </thead>
+    {% for member in site.team %}
+      <!-- Some pages do not have the profile attribute. -->
+      {% if member.profile %}
+        {% assign profile = member.profile %}
+        <tr>
+          <td> {{ profile.Position }} </td>
+          <td> <a href="{{ member.url | prepend: site.baseurl | prepend: site.url
+                        }}"> {{ profile.Name }} </a> </td>
+          <td> {{ profile.Room }} </td>
+          <td> {{ profile.Phone }}</td>
+          <td>
+            {% if profile.Photo %}
+              {% assign diacritics =
+              "., ,á,à,â,ä,ã,å,ç,é,è,ê,ë,í,ì,î,ï,ñ,ó,ò,ô,ö,õ,ú,ù,û,ü" | split: ","
+              %}
+              {% assign replacements =
+              "-,-,a,a,a,a,a,a,c,e,e,e,e,i,i,i,i,n,o,o,o,o,o,u,u,u,u" | split: ","
+              %}
+              {% assign folderName = profile.Name %}
+              {% for i in (0..diacritics.size) %}
+                {% assign srcChar = diacritics[i] %}
+                {% assign targChar = replacements[i] %}
+                {% assign folderName = folderName | replace: srcChar, targChar %}
+              {% endfor %}
+
+              {% assign profile_path = folderName | prepend: "Team/" %}
+              {% assign profile_image_path = profile.Photo | prepend: 'assets/img/' %}
+              {% assign profile_image_class = 'img-fluid z-depth-1 rounded' %}
+              {% capture sizes %}(min-width: 100px) 30vw"{% endcapture %}
+              {% include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=profile.image %}
+            {% endif %}
+            {% if profile.more_info %}
+              <div class="more-info">{{ profile.more_info }}</div>
+            {% endif %}
+          </td>
+        </tr>
+      {% endif %}
+  {% endfor %}
       {% for profile in page.profiles %}
         <tr>
           <td> {{ profile.Position }} </td>
