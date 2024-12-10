@@ -1,6 +1,6 @@
 ---
 layout: projects
-permalink: /research/current-projects
+permalink: /research/current-projects/
 title: Current Projects
 description: 
 nav: false
