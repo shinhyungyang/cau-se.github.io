@@ -38,35 +38,36 @@ layout: page
     {% for member in site.team %}
       {% assign profile = member.profile %}
       {% if profile.Position == "Professor and Head of Group" %}
-        {% assign members_sorted = members_sorted | push: profile %}
+        {% assign members_sorted = members_sorted | push: member %}
       {% endif %}
     {% endfor %}
     {% for member in site.team %}
       {% assign profile = member.profile %}
       {% if profile.Position == "Secretary" %}
-        {% assign members_sorted = members_sorted | push: profile %}
+        {% assign members_sorted = members_sorted | push: member %}
       {% endif %}
     {% endfor %}
     {% for member in site.team %}
       {% assign profile = member.profile %}
       {% if profile.Position == "System Administrator" %}
-        {% assign members_sorted = members_sorted | push: profile %}
+        {% assign members_sorted = members_sorted | push: member %}
       {% endif %}
     {% endfor %}
     {% for member in site.team %}
       {% assign profile = member.profile %}
       {% if profile.Position == "Researcher" %}
-        {% assign members_sorted = members_sorted | push: profile %}
+        {% assign members_sorted = members_sorted | push: member %}
       {% endif %}
     {% endfor %}
     {% for member in site.team %}
       {% assign profile = member.profile %}
       {% if profile.Position == "External PhD Student" %}
-        {% assign members_sorted = members_sorted | push: profile %}
+        {% assign members_sorted = members_sorted | push: member %}
       {% endif %}
     {% endfor %}
 
-    {% for profile in members_sorted %}
+    {% for member in members_sorted %}
+      {% assign profile = member.profile %}
       <tr>
         <td> {{ profile.Position }} </td>
         <td> <a href="{{ member.url | prepend: site.baseurl | prepend: site.url
