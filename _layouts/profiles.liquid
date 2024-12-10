@@ -34,7 +34,7 @@ layout: page
     "-,-,a,a,a,a,a,a,c,e,e,e,e,i,i,i,i,n,o,o,o,o,o,u,u,u,u" | split: ","
     %}
 
-    {% assign members_sorted = "" | split: "" %}  {# New array #}
+    {% assign members_sorted = "" | split: "" %}
     {% for member in site.team %}
       {% assign profile = member.profile %}
       {% if profile.Position == "Professor and Head of Group" %}
