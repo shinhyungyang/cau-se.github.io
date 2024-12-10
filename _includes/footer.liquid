@@ -2,9 +2,11 @@
   <footer class="fixed-bottom" role="contentinfo">
     <div class="container mt-0">
       <b>Contact:</b>
-      <a href="mailto:{{ site.email }}">{{ site.first_name }}
-      {{ site.middle_name }}
-      {{ site.last_name }}</a>
+      <a href="mailto:{{ site.email }}">
+        {{- site.first_name }}
+        {{ site.middle_name }}
+        {{ site.last_name -}}
+      </a>
       <br>
       {% if site.last_updated %}
         <b>Last updated:</b> {{ 'now' | date: '%B %d, %Y' }}.

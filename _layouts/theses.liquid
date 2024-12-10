@@ -1,9 +1,8 @@
 ---
 layout: page
 ---
-
 {% for item in site.pages %}
-  {% if item.title == "Current Projects" %}
+  {% if item.title == 'Current Projects' %}
     {% assign currentProjects = item.projects %}
   {% endif %}
 {% endfor %}
@@ -21,12 +20,12 @@ layout: page
         <tr>
           <td>
             <div style="text-align: left;">
-              {{ theme.desc | prepend: "**" | append: "**" | markdownify }}
+              {{ theme.desc | prepend: '**' | append: '**' | markdownify }}
             </div>
           </td>
           <td>
             {% if theme.logo %}
-              {% assign project_image_path = theme.logo| prepend: 'assets/img/' %}
+              {% assign project_image_path = theme.logo | prepend: 'assets/img/' %}
               {% assign project_image_class = 'img-fluid' %}
               {% capture sizes %}(min-width: 100px) 30vw"{% endcapture %}
               {% include figure.liquid loading="eager" path=project_image_path class=project_image_class sizes=sizes alt=theme.logo %}
@@ -39,8 +38,7 @@ layout: page
 </div>
 
 {% if page.content %}
-<div class="clearfix">
-  {{ page.content | markdownify }}
-</div>
+  <div class="clearfix">
+    {{ page.content | markdownify }}
+  </div>
 {% endif %}
-

@@ -2,7 +2,7 @@
 layout: theses
 permalink: /student-theses/
 title: Student Theses
-description: 
+description:
 nav: true
 nav_order: 3
 
@@ -14,7 +14,9 @@ themes:
   - desc: Dynamic Software Quality Metrics -- [Henning Schnoor](/team/Priv-Doz-Dr-Henning-Schnoor/)
     logo:
 ---
+
 ---
+
 ##### Finished Theses
 
 Finished theses are uploaded to KielPrints, a prints publication repository.

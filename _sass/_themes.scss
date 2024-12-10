@@ -6,8 +6,8 @@
 
 // CAU colors
 $cau-grey-color: color.ie-hex-str(#767676);
-$cau-main-color: rgba(155, 10, 125, 1.0);
-$cau-tf-color: rgba(0, 61, 134, 1.0);
+$cau-main-color: rgba(155, 10, 125, 1);
+$cau-tf-color: rgba(0, 61, 134, 1);
 
 :root {
   --global-bg-color: #{$white-color};

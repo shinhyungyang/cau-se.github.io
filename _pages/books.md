@@ -2,7 +2,7 @@
 layout: page
 permalink: /research/books/
 title: Books
-description: 
+description:
 nav: false
 nav_order: 99
 ---

@@ -6,18 +6,18 @@ layout: page
     {% if page.profile %}
       {% assign profile = page.profile %}
       <hr>
-    <div class="profile float-right">
-      {% if profile.Photo %}
-        {% assign profile_image_path = profile.Photo | prepend: 'assets/img/' %}
-        {% assign profile_image_class = 'img-fluid z-depth-1 rounded' %}
-        {% capture sizes %}(min-width: {{ site.max_width }}) {{ site.max_width | minus: 30 | times: 0.3}}px, (min-width: 576px) 30vw, 95vw"{% endcapture %}
-        {% include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=profile.image %}
-      {% endif %}
-      {% if profile.more_info %}
-        <div class="more-info">{{ profile.more_info }}</div>
-      {% endif %}
-    </div>
-  {% endif %}
+      <div class="profile float-right">
+        {% if profile.Photo %}
+          {% assign profile_image_path = profile.Photo | prepend: 'assets/img/' %}
+          {% assign profile_image_class = 'img-fluid z-depth-1 rounded' %}
+          {% capture sizes %}(min-width: {{ site.max_width }}) {{ site.max_width | minus: 30 | times: 0.3}}px, (min-width: 576px) 30vw, 95vw"{% endcapture %}
+          {% include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=profile.image %}
+        {% endif %}
+        {% if profile.more_info %}
+          <div class="more-info">{{ profile.more_info }}</div>
+        {% endif %}
+      </div>
+    {% endif %}
   </article>
 </div>
 {% if profile.content %}

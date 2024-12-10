@@ -4,24 +4,21 @@
 
 @font-face {
   font-family: "CAUIcons";
-  src:
-    url("../webfonts/cauicons-webfont.woff") format('woff');
+  src: url("../webfonts/cauicons-webfont.woff") format("woff");
   font-style: normal;
   font-weight: normal;
 }
 
 @font-face {
   font-family: "CAUMono";
-  src:
-    url("../webfonts/OxygenMono.woff") format('woff');
+  src: url("../webfonts/OxygenMono.woff") format("woff");
   font-style: normal;
   font-weight: normal;
 }
 
 @font-face {
   font-family: "CAUTitling";
-  src:
-    url("../webfonts/Mittelschrift.woff") format('woff');
+  src: url("../webfonts/Mittelschrift.woff") format("woff");
   font-style: normal;
   font-weight: normal;
 }
@@ -91,12 +88,13 @@ table {
     figure {
       margin: 0;
     }
-  } 
+  }
 }
 
-table.table-sm td, table.table-sm th {
-  padding-top: .1rem;
-  padding-bottom: .1rem;
+table.table-sm td,
+table.table-sm th {
+  padding-top: 0.1rem;
+  padding-bottom: 0.1rem;
 }
 
 a,
