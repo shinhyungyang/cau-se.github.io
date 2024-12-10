@@ -7,11 +7,13 @@
         style="max-height: 60vw"
       {% endif %}
     >
-    {% if page.name == "about.md" %}
-      <table class="table table-sm table-borderless">
-      {% else %}
-      <table style="table">
-    {% endif %}
+      <table
+          {% if page.name == "about.md" %}
+          class="table table-sm table-borderless"
+          {% else %}
+          class="table"
+          {% endif %}
+      >
       {% assign news = site.news | reverse %}
       {% if include.limit and site.announcements.limit %}
         {% assign news_limit = site.announcements.limit %}
