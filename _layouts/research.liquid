@@ -1,0 +1,55 @@
+---
+layout: page
+---
+
+{% if page.content %}
+<div class="clearfix">
+  {{ page.content | markdownify }}
+</div>
+{% endif %}
+
+{% for item in site.pages %}
+  {% if item.title == "Current Projects" %}
+    {% assign currentProjects = item.projects %}
+  {% endif %}
+{% endfor %}
+
+<div class="post">
+  <article>
+    <table class="table-borderless">
+      <thead>
+        <tr>
+          <th style="width: 25%;"></th>
+          <th></th>
+          <th style="width: 20%;"></th>
+        </tr>
+      </thead>
+      {% for project in currentProjects %}
+        <tr>
+          <td>
+            {% if project.logo %}
+              {% assign project_image_path = project.logo | prepend: 'assets/img/' %}
+              {% assign project_image_class = 'img-fluid' %}
+              {% capture sizes %}(min-width: 100px) 30vw"{% endcapture %}
+              {% include figure.liquid loading="eager" path=project_image_path class=project_image_class sizes=sizes alt=project.logo %}
+            {% endif %}
+          </td>
+          <td>
+            <div style="text-align: left;">
+              <a href="{{ project.url }}">{{ project.name }}</a><br />
+              <p>{{ project.desc }}</p>
+            </div>
+          </td>
+          <td>
+            {% if project.logo2 %}
+              {% assign project_image_path = project.logo2| prepend: 'assets/img/' %}
+              {% assign project_image_class = 'img-fluid' %}
+              {% capture sizes %}(min-width: 100px) 30vw"{% endcapture %}
+              {% include figure.liquid loading="eager" path=project_image_path class=project_image_class sizes=sizes alt=project.logo %}
+            {% endif %}
+          </td>
+        </tr>
+      {% endfor %}
+    </table>
+  </article>
+</div>
