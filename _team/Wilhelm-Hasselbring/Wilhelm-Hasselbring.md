@@ -16,7 +16,7 @@ profile:
 
 - [![eprints-logo](/assets/img/Kielprints.png)](http://oceanrep.geomar.de/view/creators/e113d8ed-5863-470e-858a-8d09a9c87aba.date.html)
 - [![google-scholar-logo](/assets/img/Google-Scholar.png)](https://scholar.google.de/citations?user=L1C_kM0AAAAJ&amp;hl=de&amp;oi=ao)
-- [![uni-trier-logo](/assets/img/uni-trier-logo.png){:width="77px"}](http://www.informatik.uni-trier.de/%7Eley/pers/hd/h/Hasselbring:Wilhelm.html)
+- [![uni-trier-logo](/assets/img/uni-trier-logo.png){:width="77px"}](https://dblp.uni-trier.de/pid/h/WilhelmHasselbring.html)
 - [![researchgate-logo](/assets/img/ResearchGate.jpg){:width="77px"}](https://www.researchgate.net/profile/Wilhelm_Hasselbring)
 - [![amazon-logo](/assets/img/amazon-logo.png)](http://www.amazon.de/exec/obidos/search-handle-url/index=books-de&amp;field-author=Hasselbring,%20Wilhelm/)
 
