@@ -14,13 +14,13 @@ profile:
 
 ###### Publication at:
 
-- <a href="http://oceanrep.geomar.de/view/creators/e113d8ed-5863-470e-858a-8d09a9c87aba.date.html" title="Publications"><img alt="eprints-logo" src="{{ '/assets/img/Kielprints.png' }}" /></a>
-- <a href="https://scholar.google.de/citations?user=L1C_kM0AAAAJ&amp;hl=de&amp;oi=ao"><img alt="google-logo" src="{{ '/assets/img/Google-Scholar.png' }}" /></a>
-- <a href="http://www.informatik.uni-trier.de/%7Eley/pers/hd/h/Hasselbring:Wilhelm.html"><img alt="uni-trier-logo" src="{{ '/assets/img/uni-trier-logo.png' }}" style="height:30px; width:77px" /></a>
-- <a href="https://www.researchgate.net/profile/Wilhelm_Hasselbring"><img alt="researchgate-logo" src="{{ '/assets/img/ResearchGate.jpg' }}" style="height:15px; width:77px" /></a>
-- <a href="http://www.amazon.de/exec/obidos/search-handle-url/index=books-de&amp;field-author=Hasselbring,%20Wilhelm/"><img alt="amazon-logo" src="{{ '/assets/img/amazon-logo.png' }}" /></a>
+- [![eprints-logo](/assets/img/Kielprints.png)](http://oceanrep.geomar.de/view/creators/e113d8ed-5863-470e-858a-8d09a9c87aba.date.html)
+- [![google-scholar-logo](/assets/img/Google-Scholar.png)](https://scholar.google.de/citations?user=L1C_kM0AAAAJ&amp;hl=de&amp;oi=ao)
+- [![uni-trier-logo](/assets/img/uni-trier-logo.png){:width="77px"}](http://www.informatik.uni-trier.de/%7Eley/pers/hd/h/Hasselbring:Wilhelm.html)
+- [![researchgate-logo](/assets/img/ResearchGate.jpg){:width="77px"}](https://www.researchgate.net/profile/Wilhelm_Hasselbring)
+- [![amazon-logo](/assets/img/amazon-logo.png)](http://www.amazon.de/exec/obidos/search-handle-url/index=books-de&amp;field-author=Hasselbring,%20Wilhelm/)
 
-<a href="{{ '/team/short-curriculum-vitae-of-wilhelm-willi-hasselbring/' }}" title="Short Curriculum Vitae of Wilhelm (Willi) Hasselbring">Curriculum Vitae</a>
+###### [Curriculum Vitae](/team/short-curriculum-vitae-of-wilhelm-willi-hasselbring/)
 
 ###### My major research and teaching interests are in Software Engineering with an emphasis on
 
