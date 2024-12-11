@@ -108,7 +108,7 @@ title: Short Curriculum Vitae of Wilhelm (Willi) Hasselbring
   </li>
   <li>2000 - 2008:
     <ul>
-      <li>Scientific Head of the <a href="http://www.informatik.uni-oldenburg.de/abteilungen/arbi">Computer Service Unit (ARBI)</a> of the <a href="http://www.informatik.uni-oldenburg.de/">Department of Computing Science</a>, <a href="http://www.uni-oldenburg.de/">University of Oldenburg</a></li>
+      <li>Scientific Head of the <a href="https://uol.de/informatik/department/arbi">Computer Service Unit (ARBI)</a> of the <a href="https://uol.de/informatik">Department of Computing Science</a>, <a href="https://uol.de">University of Oldenburg</a></li>
     </ul>
   </li>
   <li>1994:
