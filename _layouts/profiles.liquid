@@ -67,14 +67,8 @@ layout: page
         <tr>
           <td>{{ profile.Position }}</td>
           <td>
-            <a
-              href="
-                {{ member.url | prepend: site.baseurl | prepend: site.url
-                }}
-              "
-            >
-              {{ profile.Name }}
-            </a>
+            {% assign member_url = member.url | prepend: site.baseurl | prepend: site.url %}
+            <a href="{{ member_url }}">{{ profile.Name }}</a>
           </td>
           <td>{{ profile.Room }}</td>
           <td>{{ profile.Phone }}</td>
