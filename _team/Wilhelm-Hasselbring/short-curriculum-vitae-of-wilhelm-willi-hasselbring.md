@@ -144,5 +144,5 @@ title: Short Curriculum Vitae of Wilhelm (Willi) Hasselbring
   <li>2014, 2019, 2024: <a href="http://www.southampton.ac.uk/">University of Southampton</a></li>
   <li>2002: <a href="http://www.umit.at/">University of Health Informatics and Technology Tyrol</a></li>
   <li>1998, 1999, 2004: <a href="http://www.tcd.ie/">Trinity College, Dublin</a> and <a href="http://www.dcu.ie/">Dublin City University</a></li>
-  <li>1994: The <a href="http://www.ed.ac.uk/">University of Edinburgh</a>, <a href="http://www.dai.ed.ac.uk/">Department of Artificial Intelligence</a> and <a class="external-link" href="http://www.epcc.ed.ac.uk/">Edinburgh Parallel Computing Centre (EPCC)</a></li>
+  <li>1994: The <a href="http://www.ed.ac.uk/">University of Edinburgh</a>, <a href="http://www.dai.ed.ac.uk/home.html">Department of Artificial Intelligence</a> and <a class="external-link" href="http://www.epcc.ed.ac.uk/">Edinburgh Parallel Computing Centre (EPCC)</a></li>
 </ul>
