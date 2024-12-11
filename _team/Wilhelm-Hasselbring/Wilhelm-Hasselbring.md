@@ -14,11 +14,11 @@ profile:
 
 ###### Publication at:
 
-- <a href="http://oceanrep.geomar.de/view/creators/e113d8ed-5863-470e-858a-8d09a9c87aba.date.html" title="Publications"><img alt="eprints-logo" src="{{ '/assets/img/Kielprints.png' | prepend: site.baseurl | prepend: site.url }}" /></a>
-- <a href="https://scholar.google.de/citations?user=L1C_kM0AAAAJ&amp;hl=de&amp;oi=ao"><img alt="google-logo" src="{{ '/assets/img/Google-Scholar.png' | prepend: site.baseurl | prepend: site.url }}" /></a>
-- <a href="http://www.informatik.uni-trier.de/%7Eley/pers/hd/h/Hasselbring:Wilhelm.html"><img alt="uni-trier-logo" src="{{ '/assets/img/uni-trier-logo.png' | prepend: site.baseurl | prepend: site.url }}" style="height:30px; width:77px" /></a>
-- <a href="https://www.researchgate.net/profile/Wilhelm_Hasselbring"><img alt="researchgate-logo" src="{{ '/assets/img/ResearchGate.jpg' | prepend: site.baseurl | prepend: site.url }}" style="height:15px; width:77px" /></a>
-- <a href="http://www.amazon.de/exec/obidos/search-handle-url/index=books-de&amp;field-author=Hasselbring,%20Wilhelm/"><img alt="amazon-logo" src="{{ '/assets/img/amazon-logo.png' | prepend: site.baseurl | prepend: site.url }}" /></a>
+- <a href="http://oceanrep.geomar.de/view/creators/e113d8ed-5863-470e-858a-8d09a9c87aba.date.html" title="Publications"><img alt="eprints-logo" src="{{ '/assets/img/Kielprints.png' | prepend: site.url }}" /></a>
+- <a href="https://scholar.google.de/citations?user=L1C_kM0AAAAJ&amp;hl=de&amp;oi=ao"><img alt="google-logo" src="{{ '/assets/img/Google-Scholar.png' | prepend: site.url }}" /></a>
+- <a href="http://www.informatik.uni-trier.de/%7Eley/pers/hd/h/Hasselbring:Wilhelm.html"><img alt="uni-trier-logo" src="{{ '/assets/img/uni-trier-logo.png' | prepend: site.url }}" style="height:30px; width:77px" /></a>
+- <a href="https://www.researchgate.net/profile/Wilhelm_Hasselbring"><img alt="researchgate-logo" src="{{ '/assets/img/ResearchGate.jpg' | prepend: site.url }}" style="height:15px; width:77px" /></a>
+- <a href="http://www.amazon.de/exec/obidos/search-handle-url/index=books-de&amp;field-author=Hasselbring,%20Wilhelm/"><img alt="amazon-logo" src="{{ '/assets/img/amazon-logo.png' | prepend: site.url }}" /></a>
 
 <a href="{{ '/team/short-curriculum-vitae-of-wilhelm-willi-hasselbring/' | prepend: site.baseurl | prepend: site.url }}" title="Short Curriculum Vitae of Wilhelm (Willi) Hasselbring">Curriculum Vitae</a>
 

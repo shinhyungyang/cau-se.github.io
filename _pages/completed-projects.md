@@ -1,6 +1,6 @@
 ---
 layout: projects
-permalink: /research/completed-projects
+permalink: /research/completed-projects/
 title: Completed Projects
 description: 
 nav: false
