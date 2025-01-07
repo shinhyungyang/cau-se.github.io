@@ -5,6 +5,7 @@ title: Impressum
 description: 
 nav: false
 nav_order: 99
+---
 
 Prof. Dr. Wilhelm Hasselbring
 Christian-Albrechts-Universität zu Kiel
