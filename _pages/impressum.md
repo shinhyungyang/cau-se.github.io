@@ -1,5 +1,5 @@
 ---
-layout: projects
+layout: page
 permalink: /impressum/
 title: Impressum
 description: 
