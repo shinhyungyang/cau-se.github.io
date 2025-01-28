@@ -1,13 +1,13 @@
 ---
 layout: profile
 
-title: Armin Möbius
+title: Tom Krause
 description: External PhD Student
 
 profile:
-  Name: Armin Möbius
+  Name: Tom Krause
   Position: External PhD Student
-  Room: IBAK Helmut Hunger GmbH & Co. KG
+  Room: 
   Phone:
-  Photo: Moebius.png
+  Photo: blank_img.png
 ---

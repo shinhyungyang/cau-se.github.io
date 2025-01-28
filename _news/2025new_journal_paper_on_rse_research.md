@@ -6,7 +6,7 @@ inline: false
 related_posts: false
 ---
 
-### New paper in Communications of the ACM,
+### New paper in Communications of the ACM
 
 **Felderer, M., Goedicke, M., Grunske, L., Hasselbring, W., Lamprecht, A. L. and Rumpe, B. (2025) "<span>Investigating Research Software Engineering: Toward RSE Research.</span>" _Communications of the ACM_, 68(2). pp. 20-23. doi:&nbsp;[https://doi.org/10.1145/3685265](https://doi.org/10.1145/3685265)**
 

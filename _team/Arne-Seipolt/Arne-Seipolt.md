@@ -1,13 +1,13 @@
 ---
 layout: profile
 
-title: Nelson Tavares de Sousa
+title: Arne Seipolt
 description: External PhD Student
 
 profile:
-  Name: Nelson Tavares de Sousa
+  Name: Arne Seipolt
   Position: External PhD Student
-  Room:
+  Room: 
   Phone:
-  Photo: Nelson-Tavares-de-Sousa.png
+  Photo: blank_img.png
 ---

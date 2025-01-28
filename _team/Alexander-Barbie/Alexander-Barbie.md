@@ -7,7 +7,7 @@ description: External PhD Student
 profile:
   Name: Alexander Barbie
   Position: External PhD Student
-  Room: GEOMAR
+  Room: 
   Phone:
   Photo: Alexander-Barbie.jpg
 ---

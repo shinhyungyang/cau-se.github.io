@@ -12,7 +12,7 @@ profile:
   Photo: PortraitWha.jpg
 ---
 
-###### Publication at:
+###### Publications at:
 
 - [![eprints-logo](/assets/img/Kielprints.png)](http://oceanrep.geomar.de/view/creators/e113d8ed-5863-470e-858a-8d09a9c87aba.date.html)
 - [![google-scholar-logo](/assets/img/Google-Scholar.png)](https://scholar.google.de/citations?user=L1C_kM0AAAAJ&hl=de&oi=ao)
@@ -24,15 +24,15 @@ profile:
 
 ###### My major research and teaching interests are in Software Engineering with an emphasis on
 
-- Software architecture design and evaluationg
-- Software visualization and reverse engineeringg
-- Software monitoring and profilingg
-- Distributed systems, particularly fault-tolerance, runtime reconfiguration and monitoringg
-- Component-based software development and Enterprise Application Integrationg
-- Microservices and DevOps for continuous software engineeringg
+- Software architecture design and evaluation
+- Software visualization and reverse engineering
+- Software monitoring and profiling
+- Distributed systems, particularly fault-tolerance, runtime reconfiguration and monitoring
+- Component-based software development and Enterprise Application Integration
+- Microservices and DevOps for continuous software engineering
 - Middleware for grid, cloud and enterprise systemsg
-- Research data and software managementg
-- Open scienceg
+- Research data and software management
+- Open science
 
 ###### My current positions include (in German):
 
