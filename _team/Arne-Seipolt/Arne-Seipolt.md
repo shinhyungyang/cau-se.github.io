@@ -9,5 +9,5 @@ profile:
   Position: External PhD Student
   Room: 
   Phone:
-  Photo: blank_img.png
+  Photo: Arne-Seipolt.jpg
 ---
