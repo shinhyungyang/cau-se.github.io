@@ -82,7 +82,7 @@ layout: page
               {% endfor %}
 
               {% assign profile_path = folderName | prepend: 'Team/' %}
-              {% assign profile_image_path = profile.Photo | prepend: 'assets/img/' %}
+              {% assign profile_image_path = profile.Photo | prepend: 'assets/img/ProfilePictures/' %}
               {% assign profile_image_class = 'img-fluid z-depth-1 rounded' %}
               {% capture sizes %}(min-width: 100px) 30vw"{% endcapture %}
               {% include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=profile.image %}
