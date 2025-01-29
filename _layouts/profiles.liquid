@@ -19,9 +19,9 @@ layout: page
     <table class="table table-sm table-borderless">
       <thead>
         <tr>
-          <th style="width: 25%;">Position</th>
-          <th style="width: 25%;">Name</th>
-          <th>Room</th>
+          <th style>Position</th>
+          <th style>Name</th>
+          <!--th>Room</th-->
           <th>Phone</th>
           <th style="width: 25%;">Photo</th>
         </tr>
@@ -70,7 +70,7 @@ layout: page
             {% assign member_url = member.url | prepend: site.baseurl | prepend: site.url %}
             <a href="{{ member_url }}">{{ profile.Name }}</a>
           </td>
-          <td>{{ profile.Room }}</td>
+          <!--td>{{ profile.Room }}</td-->
           <td>{{ profile.Phone }}</td>
           <td>
             {% if profile.Photo %}
