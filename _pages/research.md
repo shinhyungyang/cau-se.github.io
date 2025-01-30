@@ -7,6 +7,6 @@ nav: true
 nav_order: 5
 ---
 
-###### [Completed Porjects](/research/completed-projects/)
+###### [Current Projects](/research/current-projects/)
 
-###### [Current Porjects](/research/current-projects/)
+###### [Completed Projects](/research/completed-projects/)

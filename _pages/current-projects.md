@@ -10,14 +10,13 @@ projects:
   - name: ExplorViz
     url: https://.explorviz.uni-kiel.de/
     desc: "Live Trace Visualization of large software landscapes"
-    logo:  explorviz-logo-dark.png
+    logo:  explorviz-logo-white.png
     logo2: cau-norm-de-lilagrey-rgb.svg
-  - name: Theodolite
-    url: https://www.theodolite.rocks/
-    desc: "A framework for benchmarking the horizontal and vertical scalability
-    of cloud-native applications"
-    logo: theodolite-horizontal-transparent.svg
-    logo2: cau-norm-de-lilagrey-rgb.svg
+  - name: ScalableMine
+    url: https://www.sourced.uni-bayreuth.de/de/projects/ScalableMine/index.html
+    desc: "Scalable Hierarchical Process Mining in Event-Stream Systems"
+    logo: SOURCED.png
+    logo2: DFG.svg
   - name: SustainKieker
     url: https://sustainkieker.kieker-monitoring.net/
     desc: "Kieker monitoring framework as a sustainable and reusable research
@@ -29,5 +28,11 @@ projects:
     desc: "MOnitoring Overhead BENCHmark to measure and quantify the overhead
     of monitoring frameworks"
     logo: MooBench-logo.svg
+    logo2: cau-norm-de-lilagrey-rgb.svg
+  - name: Theodolite
+    url: https://www.theodolite.rocks/
+    desc: "A framework for benchmarking the horizontal and vertical scalability
+    of cloud-native applications"
+    logo: theodolite-horizontal.png
     logo2: cau-norm-de-lilagrey-rgb.svg
 ---
