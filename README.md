@@ -19,7 +19,7 @@ docker compose down
 
 ## Avoid GitHub Action Failures
 
-We can run some of GitHub action jobs locally to avoid GitHub action failures. 
+We can run some of GitHub action jobs locally to avoid GitHub action failures.
 
 ### Checking code format
 
