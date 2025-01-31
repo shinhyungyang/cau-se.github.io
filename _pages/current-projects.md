@@ -22,7 +22,7 @@ projects:
     desc: "Entwicklung einer intelligenten Sensorplattform zur Erntemengenerfassung- und Management von Silagen"
     logo: SilageControl.png
     logo2: BMEL.png
- - name: SustainKieker
+  - name: SustainKieker
     url: https://sustainkieker.kieker-monitoring.net/
     desc: "Kieker monitoring framework as a sustainable and reusable research
     software"
