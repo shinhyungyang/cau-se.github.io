@@ -16,5 +16,3 @@ themes:
   - desc: "Dynamic Software Quality Metrics -- [Henning Schnoor](/team/Priv-Doz-Dr-Henning-Schnoor/)"
     logo:
 ---
-
-

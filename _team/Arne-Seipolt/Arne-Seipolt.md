@@ -7,7 +7,7 @@ description: External PhD Student
 profile:
   Name: Arne Seipolt
   Position: External PhD Student
-  Room: 
+  Room:
   Phone:
   Photo: Arne-Seipolt.jpg
 ---

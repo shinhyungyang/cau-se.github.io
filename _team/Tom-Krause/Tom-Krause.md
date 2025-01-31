@@ -7,7 +7,7 @@ description: External PhD Student
 profile:
   Name: Tom Krause
   Position: External PhD Student
-  Room: 
+  Room:
   Phone:
   Photo: Tom-Krause.jpg
 ---

@@ -3,11 +3,11 @@
 # -----------------------------------------------------------------------------
 
 title: Software Engineering Group
-first_name: 
+first_name:
 middle_name:
-last_name: 
-email: 
-institute: 
+last_name:
+email:
+institute:
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   Welcome to the Software Engineering Group at the Christian-Albrechts-University of Kiel (CAU)
 footer_text: >
@@ -22,7 +22,7 @@ url: https://cau-se.github.io # the base hostname & protocol for your site
 baseurl: # the subpath of your site, e.g. /blog/. Leave blank for root
 last_updated: true # set to true if you want to display last updated in the footer
 imprint_path: /imprint/ # set to path to include imprint link in the footer, use the same path as permalink in a page, helps to conform with EU GDPR
-imprint_url: 
+imprint_url:
 back_to_top: true # set to false to disable the back to top button
 
 # -----------------------------------------------------------------------------

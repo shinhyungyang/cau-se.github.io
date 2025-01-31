@@ -2,7 +2,7 @@
 layout: page
 permalink: /imprint/
 title: Imprint
-description: 
+description:
 nav: false
 nav_order: 99
 ---
