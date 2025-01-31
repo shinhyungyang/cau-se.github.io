@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: <b>Welcome to the Software Engineering Group at [Christian-Albrechts-University (CAU) Kiel](https://www.uni-kiel.de/)</b>
+subtitle: <b>Welcome to the Software Engineering Group at <a href="https://www.uni-kiel.de/">Christian-Albrechts-University (CAU) Kiel</a>!</b>
 
 news: true # includes a list of news items
 selected_papers: false # includes a list of papers marked as "selected={true}"
