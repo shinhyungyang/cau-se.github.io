@@ -11,24 +11,35 @@ layout: page
   <article>
     <table class="table-borderless">
       <thead>
-        <tr>
-          <th style="text-align: left; width: 75%;">Topics</th>
-          <th style="text-align: left; width: 25%;">Project Context</th>
+        <tr style="border-bottom: thin solid;">
+          <th style="text-align: left; width: 75%; padding-bottom: .25em">Topics</th>
+          <th style="text-align: left; width: 25%; padding-bottom: .25em">Project Context</th>
         </tr>
       </thead>
-      {% for theme in page.themes %}
+      {% for topic in page.topics %}
         <tr>
-          <td>
+          <td style="padding-top: .25em;">
             <div style="text-align: left;">
-              {{ theme.desc | prepend: '**' | append: '**' | markdownify }}
+              {{ topic.desc | prepend: '**' | append: '**' | markdownify }}
             </div>
+            {% if topic.examples %}
+              <div style="text-align: left;">
+                Examples:
+                {{ topic.examples | markdownify }}
+              </div>
+            {% endif %}
+            {% if topic.contact %}
+              <div style="text-align: left;">
+                {{ topic.contact | prepend: 'Contact: ' | markdownify }}
+              </div>
+            {% endif %}
           </td>
-          <td>
-            {% if theme.logo %}
-              {% assign project_image_path = theme.logo | prepend: 'assets/img/' %}
+          <td style="vertical-align: top; padding-top: .5em">
+            {% if topic.logo %}
+              {% assign project_image_path = topic.logo | prepend: 'assets/img/' %}
               {% assign project_image_class = 'img-fluid' %}
               {% capture sizes %}(min-width: 100px) 30vw"{% endcapture %}
-              {% include figure.liquid loading="eager" path=project_image_path class=project_image_class sizes=sizes alt=theme.logo %}
+              {% include figure.liquid loading="eager" path=project_image_path class=project_image_class sizes=sizes alt=topic.logo %}
             {% endif %}
           </td>
         </tr>
