@@ -27,7 +27,7 @@ projects:
     desc: "Kieker monitoring framework as a sustainable and reusable research
     software"
     logo: SustainKieker-logo.svg
-    logo2: DFG.svg
+    logo2: dfg_logo_schriftzug_blau_foerderung_en.jpg
   - name: MooBench
     url: https://kieker-monitoring.net/research/projects/moobench/
     desc: "MOnitoring Overhead BENCHmark to measure and quantify the overhead
