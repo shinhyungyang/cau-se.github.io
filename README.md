@@ -23,17 +23,20 @@ We can run some of GitHub action jobs locally to avoid GitHub action failures.
 
 ### Checking code format
 
+Install npm and prettier:
+
 ```bash
+sudo dnf install npm
 npm install prettier
 ```
 
-Check what's wrong
+Check what's wrong:
 
 ```bash
 npx prettier . --check
 ```
 
-Apply prettier suggestions
+Apply prettier suggestions:
 
 ```bash
 npx prettier . --write
@@ -42,7 +45,7 @@ npx prettier . --write
 ### Fix broken URLs
 
 Install cargo, openssl-devel, and lychee. The package name for openssl-devel
-differs by Linux distribution.
+differs by the deployed Linux distribution.
 
 ```bash
 curl -sSf 'https://sh.rustup.rs' | sh
