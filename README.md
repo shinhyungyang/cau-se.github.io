@@ -1,5 +1,13 @@
 # Software Engineering Group at the CAU of Kiel
 
+## Modifying the homepage will follow the below procedure.
+
+1. Clone the repository.
+2. Execute the homepage locally (http://localhost:8080).
+3. Add modifications to the code. Most changes will be applied and shown on the fly.
+4. Check code formatting and broken urls.
+5. Make commits and push to the main branch.
+
 ## Test-run the homepage locally
 
 ### Launch the test instance
