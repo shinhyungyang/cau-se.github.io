@@ -7,52 +7,97 @@ layout: page
   </div>
 {% endif %}
 
+{% comment %}
+  [[ [project][ ][ ] .. ][ [ ][ ][ ] ..     ]]
+   <--- cur_projects ---><-- prv_projects -->
+   <----            all_projects        ---->
+{% endcomment %}
+
+{% assign all_projects = '' | split: ',' %}
+{% assign cur_projects = '' | split: ',' %}
+{% assign prv_projects = '' | split: ',' %}
+{% assign research_software = '' | split: ',' %}
+
 {% for item in site.pages %}
-  {% if item.title == 'Current Projects' %}
-    {% assign currentProjects = item.projects %}
+  {% if item.title == 'Research Software' %}
+    {% assign research_software = research_software | push: item.title %}
+    {% assign research_software = research_software | push: item.permalink %}
+    {% assign research_software = research_software | push: item.projects %}
+    {% assign all_projects = all_projects | push: research_software %}
+    {% break %}
   {% endif %}
 {% endfor %}
 
-<div class="post">
-  <article>
-    <table class="table-borderless">
-      <thead>
-        <tr>
-          <th style="width: 25%;"></th>
-          <th></th>
-          <th style="width: 20%;"></th>
-        </tr>
-      </thead>
-      {% for project in currentProjects %}
-        <tr>
-          <td>
-            <div style="vertical-align: middle;">
-              {% if project.logo %}
-                {% assign project_image_path = project.logo | prepend: 'assets/img/' %}
-                {% assign project_image_class = 'img-fluid' %}
-                {% capture sizes %}(min-width: 100px) 30vw"{% endcapture %}
-                {% include figure.liquid loading="eager" path=project_image_path class=project_image_class sizes=sizes alt=project.logo %}
-              {% endif %}
-            </div>
-          </td>
-          <td>
-            <div style="text-align: left;">
-              <a href="{{ project.url }}">{{ project.name }}</a><br>
-              {{ project.desc }}
-            </div>
-          </td>
-          <td>
-            <div style="vertical-align: middle;">
-              {% if project.logo2 %}
-                {% assign project_image_path = project.logo2 | prepend: 'assets/img/' %}
-                {% assign project_image_class = 'img-fluid' %}
-                {% capture sizes %}(min-width: 100px) 30vw"{% endcapture %}
-                {% include figure.liquid loading="eager" path=project_image_path class=project_image_class sizes=sizes alt=project.logo %}
-              {% endif %}
-            </div>
-          </td>
-        </tr>
-      {% endfor %}
-    </table>
-  </article>
-</div>
+{% for item in site.pages %}
+  {% if item.title == 'Current Projects' %}
+    {% assign cur_projects = cur_projects | push: item.title %}
+    {% assign cur_projects = cur_projects | push: item.permalink %}
+    {% assign cur_projects = cur_projects | push: item.projects %}
+    {% assign all_projects = all_projects | push: cur_projects %}
+    {% break %}
+  {% endif %}
+{% endfor %}
+
+{% for item in site.pages %}
+  {% if item.title == 'Completed Projects' %}
+    {% assign prv_projects = prv_projects | push: item.title %}
+    {% assign prv_projects = prv_projects | push: item.permalink %}
+    {% assign prv_projects = prv_projects | push: item.projects %}
+    {% assign all_projects = all_projects | push: prv_projects %}
+    {% break %}
+  {% endif %}
+{% endfor %}
+
+{% for item in all_projects %}
+  {% assign urlTitle = item[0] %}
+  {% assign url = item[1] %}
+  {% assign projects = item[2] %}
+
+  <h6>
+    <a href="{{ url }}">{{ urlTitle }}</a>
+  </h6>
+  <div class="post">
+    <article>
+      <table class="table-borderless">
+        <thead>
+          <tr>
+            <th style="width: 25%;"></th>
+            <th></th>
+            <th style="width: 20%;"></th>
+          </tr>
+        </thead>
+        {% for project in projects %}
+          <tr>
+            <td>
+              <div style="vertical-align: middle;">
+                {% if project.logo %}
+                  {% assign project_image_path = project.logo | prepend: 'assets/img/' %}
+                  {% assign project_image_class = 'img-fluid' %}
+                  {% capture sizes %}(min-width: 100px) 30vw"{% endcapture %}
+                  {% include figure.liquid loading="eager" path=project_image_path class=project_image_class sizes=sizes alt=project.logo %}
+                {% endif %}
+              </div>
+            </td>
+            <td>
+              <div style="text-align: left;">
+                <a href="{{ project.url }}">{{ project.name }}</a><br>
+                {{ project.desc }}
+              </div>
+            </td>
+            <td>
+              <div style="vertical-align: middle;">
+                {% if project.logo2 %}
+                  {% assign project_image_path = project.logo2 | prepend: 'assets/img/' %}
+                  {% assign project_image_class = 'img-fluid' %}
+                  {% capture sizes %}(min-width: 100px) 30vw"{% endcapture %}
+                  {% include figure.liquid loading="eager" path=project_image_path class=project_image_class sizes=sizes alt=project.logo %}
+                {% endif %}
+              </div>
+            </td>
+          </tr>
+        {% endfor %}
+      </table>
+    </article>
+  </div>
+  <br>
+{% endfor %}
