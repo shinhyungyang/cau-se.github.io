@@ -1,11 +1,11 @@
 ---
 layout: profile
 
-title: Shinhyung Yang
+title: Dr. Shinhyung Yang
 description: Researcher
 
 profile:
-  Name: Shinhyung Yang
+  Name: Dr. Shinhyung Yang
   Position: Researcher
   Room: 1215
   Phone: -4467
