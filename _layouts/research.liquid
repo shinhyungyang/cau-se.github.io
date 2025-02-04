@@ -63,7 +63,9 @@ layout: page
           <tr>
             <th style="width: 25%;"></th>
             <th></th>
-            <th style="width: 20%;"></th>
+            {% unless urlTitle == 'Research Software' %}
+              <th style="width: 20%;"></th>
+            {% endunless %}
           </tr>
         </thead>
         {% for project in projects %}
@@ -84,16 +86,18 @@ layout: page
                 {{ project.desc }}
               </div>
             </td>
-            <td>
-              <div style="vertical-align: middle;">
-                {% if project.logo2 %}
-                  {% assign project_image_path = project.logo2 | prepend: 'assets/img/' %}
-                  {% assign project_image_class = 'img-fluid' %}
-                  {% capture sizes %}(min-width: 100px) 30vw"{% endcapture %}
-                  {% include figure.liquid loading="eager" path=project_image_path class=project_image_class sizes=sizes alt=project.logo %}
-                {% endif %}
-              </div>
-            </td>
+            {% unless urlTitle == 'Research Software' %}
+              <td>
+                <div style="vertical-align: middle;">
+                  {% if project.logo2 %}
+                    {% assign project_image_path = project.logo2 | prepend: 'assets/img/' %}
+                    {% assign project_image_class = 'img-fluid' %}
+                    {% capture sizes %}(min-width: 100px) 30vw"{% endcapture %}
+                    {% include figure.liquid loading="eager" path=project_image_path class=project_image_class sizes=sizes alt=project.logo %}
+                  {% endif %}
+                </div>
+              </td>
+            {% endunless %}
           </tr>
         {% endfor %}
       </table>
