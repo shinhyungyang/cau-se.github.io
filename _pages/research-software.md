@@ -8,7 +8,7 @@ nav_order: 99
 
 projects:
   - name: ExplorViz
-    url: https://.explorviz.uni-kiel.de/
+    url: https://www.explorviz.uni-kiel.de/
     desc: "Live Trace Visualization of large software landscapes"
     logo:  explorviz-logo-white.png
     logo2: cau-norm-de-lilagrey-rgb.svg

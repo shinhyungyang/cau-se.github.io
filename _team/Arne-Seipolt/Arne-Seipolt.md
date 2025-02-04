@@ -10,4 +10,5 @@ profile:
   Room:
   Phone:
   Photo: Arne-Seipolt.jpg
+  OfficialURL: https://www.researchgate.net/profile/Arne-Seipolt-Seipolt
 ---
