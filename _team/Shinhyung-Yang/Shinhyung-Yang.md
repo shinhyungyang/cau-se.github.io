@@ -10,4 +10,5 @@ profile:
   Room: 1215
   Phone: -4467
   Photo: Shinhyung-Yang.jpg
+  OfficialURL: https://www.uni-kiel.de/de/person/yang-shinhyung-70105
 ---

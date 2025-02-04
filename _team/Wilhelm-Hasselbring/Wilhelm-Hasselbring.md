@@ -10,6 +10,7 @@ profile:
   Room: 1217
   Phone: -4664
   Photo: PortraitWha.jpg
+  OfficialURL: https://www.uni-kiel.de/de/person/hasselbring-wilhelm-46807
 ---
 
 ###### Publications at:

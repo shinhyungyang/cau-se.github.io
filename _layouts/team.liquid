@@ -68,7 +68,11 @@ layout: page
           <td>{{ profile.Position }}</td>
           <td>
             {% assign member_url = member.url | prepend: site.baseurl | prepend: site.url %}
-            <a href="{{ member_url }}">{{ profile.Name }}</a>
+            {% if profile.OfficialURL %}
+              <a href="{{ profile.OfficialURL }}">{{ profile.Name }}</a>
+            {% else %}
+              {{ profile.Name }}
+            {% endif %}
           </td>
           <!-- td>{{ profile.Room }}</td -->
           <!-- td>{{ profile.Phone }}</td -->
