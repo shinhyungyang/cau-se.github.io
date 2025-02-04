@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://cau-se.github.io/sitemap.xml
