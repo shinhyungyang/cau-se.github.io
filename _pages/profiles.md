@@ -9,6 +9,4 @@ team_img: lehrstuhl-2018.jpg
 team_img_width: 680px
 ---
 
-Our phone prefix is **+49 431 880**.
-
 Current members:
