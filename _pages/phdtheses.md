@@ -10,7 +10,7 @@ nav_order: 99
 1. Dr.-Ing. Alexander Barbie: [Agile Continuous Integration Testing of Embedded Software Systems with Digital Twin Prototypes](https://doi.org/10.21941/kcss/2025/2), 2025
     - Now with [thyssenkrupp Marine Systems](https://www.thyssenkrupp-marinesystems.com/)
 
-1. Dr.-Ing. Sören Henning: [Scalability Benchmarking of Cloud-Native Applications Applied to Event-Driven Microservices](https://doi.org/10.21941/kcss/2023/2)(## "your hover text"), 2023
+1. Dr.-Ing. Sören Henning: [Scalability Benchmarking of Cloud-Native Applications Applied to Event-Driven Microservices](https://doi.org/10.21941/kcss/2023/2), 2023
     - Now with [Dynatrace](http://www.dynatrace.com)
 
 1. Dr. David Georg Reichelt: [Untersuchung von Performanzveränderungen auf Quelltextebene](https://oceanrep.geomar.de/58095/), 2023
@@ -38,7 +38,7 @@ nav_order: 99
     - Now with [PSI Software](https://www.psi.de/)
  
 1. Prof. Dr.-Ing. André van Hoorn &nbsp;†&nbsp; : [Model-Driven Online Capacity Management for Component-Based Software Systems](https://nbn-resolving.org/urn:nbn:de:gbv:8-diss-157230), 2014
-    - Now with [University of Hamburg](https://www.inf.uni-hamburg.de/en/inst/ab/swk/team/vhoorn.html)
+    - Was with the [University of Hamburg](https://www.inf.uni-hamburg.de/en/inst/ab/swk/team/vhoorn.html)
  
 1. Dr.-Ing. Sören Frey: [Conformance Checking and Simulation-based Evolutionary Optimization for Deployment and Reconfiguration of Software in the Cloud](https://nbn-resolving.org/urn:nbn:de:gbv:8-diss-140940), 2013
     - Now with [Mercedes-Benz Tech Innovation](https://www.mercedes-benz-techinnovation.com/)
