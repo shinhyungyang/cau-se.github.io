@@ -7,4 +7,4 @@ nav: true
 nav_order: 5
 ---
 
-![](/assets/img/PhDHat.jpg| width=100) **[Completed PhD theses](/research/phdtheses/)**
+![](/assets/img/PhDHat.jpg| width="50") **[Completed PhD theses](/research/phdtheses/)**
