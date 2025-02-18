@@ -8,6 +8,6 @@ related_posts: false
 
 ### PhD Defense Alexander Barbie
 
-Alexander Barbie sucessfully defended his PhD Thesis
+Alexander Barbie sucessfully defended his [PhD Thesis](https://doi.org/10.21941/kcss/2025/2)
 
-![Alexander Barbie with PhD Committee](/assets/img/News/PhDDefenseAlexanderBarbie.jpg)
+![Alexander Barbie with PhD Committee](/assets/img/News/PhDDefenseAlexanderBarbie.jpg| width=100)
