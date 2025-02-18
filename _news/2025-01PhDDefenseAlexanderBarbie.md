@@ -10,4 +10,4 @@ related_posts: false
 
 Alexander Barbie sucessfully defended his PhD Thesis
 
-![Alexander Barbie with PhD Committee](/assets/img/News/PhDDefenseAlexanderBarbie.jpeg)
+![Alexander Barbie with PhD Committee](/assets/img/News/PhDDefenseAlexanderBarbie.jpg)
