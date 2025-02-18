@@ -10,4 +10,4 @@ related_posts: false
 
 Alexander Barbie sucessfully defended his [PhD Thesis](https://doi.org/10.21941/kcss/2025/2)
 
-<img src="/assets/img/News/PhDDefenseAlexanderBarbie.jpg" width="200">
+<img src="/assets/img/News/PhDDefenseAlexanderBarbie.jpg" width="300">
